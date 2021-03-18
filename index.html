@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Stephanie 🤍</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stephanie.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+</head>
+<body>
+	<div class="contenedor">
+		<div class="caja" id="caja">
+			<div class="div">
+				<strong>Holi, da click en el botón</strong>
+			</div>
+		<div class="foto">
+			<img class="flecha" src="flecha.png" alt="">
+		</div>
+		<div class="btn">
+			<button class="button" onclick="myFunction()">Botón UwU</button>
+		</div>
+		</div>
+			<div class="animacion" id="animation">
+			<!-- <div class="mensaje2"></div> -->
+			<div class="mensaje" id="demo">Sólo quería decirte que... </div>
+		</div>
+		
+		<div class="stephanie" id="stephanie">
+			<img src="stephanie.jpg" alt="">
+		</div>
+	</div>
+	
+
+</body>
+<script>
+function myFunction() {
+
+	function saludo (){
+			 document.getElementById("animation").style.display = "none";
+			 document.getElementById("caja").style.display = "none";
+			 document.getElementById("stephanie").style.display = "block";
+		}
+	
+	document.getElementById("animation").style.display = "inline-block";
+    document.getElementById("demo").style = "animation: colores 10s ease";
+    document.getElementById("demo").style.background = "#1b3b6f";
+    var intervalo = setInterval(saludo, 3000);
+    
+	
+	//var mq = window.matchMedia( "(max-width: 500px)" );
+	//if (mq.matches) {
+	    
+		document.getElementById("caja").style.display = "none";
+	//}
+	
+}
+
+</script>
+</html>

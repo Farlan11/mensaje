@@ -1,0 +1,121 @@
+*{
+	text-align:center ;
+}
+
+@keyframes colores{
+	/*from{background: #9eb3c2;}
+	to{background: #21295c;}*/
+
+	/*para que se vea un cambio uniforme*/
+	0%{background: #DCC38C;}
+	25%{background: #B49758; }
+	50%{background: #9E7B30; }
+	75%{background: #956F1D; }
+	100%{background: #73520A; }
+}
+@keyframes movimiento{
+
+	/*from{transform: translate(0px);}
+	to{transform: translate(500px)}*/
+
+	/*Es mejor asi*/
+
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(50px);}
+	100%{transform: translateY(0px);}
+}
+
+
+body{
+ 	
+	background: url('pergamino.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	text-align: center;
+}
+.div{
+
+		font-size: 30px;
+		font-family: 'Raleway', sans-serif;
+	 	margin: 0 auto;
+		padding-top: 80px;
+		padding-bottom: 20px;
+		
+}
+
+.foto{
+	padding-bottom: 30px;
+	animation: movimiento 3s ease infinite;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.foto .flecha{
+	width: 15%;
+}
+.btn{
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+.btn .button{
+	background:#513D12;
+	color: #CDB47F;
+	padding: 10px 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.btn .button:hover{
+	background:#281F0C ;
+}
+.mensaje2{
+	width: 200px;
+	height: 200px;
+	background: #9eb3c2;
+	animation: colores 5s ease ;
+}
+
+.animacion{
+	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .6);
+	display: none;
+    text-align: center; /* requerido para volver a alinear texto izquierda */
+}
+
+.mensaje{
+	width: 200px;
+	height: 80px;
+	background: #fff;
+	color: #fff;
+	padding-top: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.stephanie{
+	display: none;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.stephanie img{
+	width: 35%;
+}
+
+
+
+
+@media screen and (max-width: 500px)
+{
+	.div{ 
+		font-size: 25px;
+	}
+
+	.btn .button{
+	
+	padding: 5px 5px;
+	}
+	.stephanie img{
+	width: 75%;
+}
+}
